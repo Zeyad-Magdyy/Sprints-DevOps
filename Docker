@@ -1,0 +1,12 @@
+FROM python:3.8
+
+WORKDIR /var/src/app
+
+COPY README.md .
+COPY sprints.py .
+COPY test.py .
+COPY sshd.sh .
+COPY SecuringSSH.PNG .
+
+
+CMD ["python" , "./sprint.py"]
